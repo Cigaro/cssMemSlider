@@ -20,6 +20,7 @@ const activeDot = n =>{
 
 dots.forEach((item, indexDot) =>{
   item.addEventListener('click', ()=>{
+      if(indexDot == previous) return
 		index = indexDot;
 		activeDot(index);
 		hideItem('to-left', previous)
